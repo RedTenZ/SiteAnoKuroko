@@ -1,0 +1,20 @@
+<header>
+
+
+
+    <div class="material-icons right" style="color: #FFFFFF" (click)="openCloseNav()">dehaze</div>
+    <h1>
+      Kuroko's
+    </h1>
+
+
+
+</header>
+
+<!-- SideNav -->
+<div id="mySidenav" class="sidenav" *ngIf="isOpen">
+  <a routerLink="login" *ngIf="!isAuth">Se connecter</a>
+  <a routerLink="sendmsg">Envoyez un ano</a>
+  <a routerLink="viewmsg" *ngIf="isAuth">Voir les anos</a>
+  <a routerLink="/" class="logout" *ngIf="isAuth" (click)="onLogout()">Déconnexion</a>
+</div>

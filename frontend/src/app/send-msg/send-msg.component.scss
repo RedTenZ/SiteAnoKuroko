@@ -1,0 +1,16 @@
+input[type="file"] {
+  visibility: hidden;
+}
+.image-preview {
+  img {
+    max-width: 100%;
+  }
+}
+.sendmsg{
+  padding-top:1%;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  z-index: 1;
+}

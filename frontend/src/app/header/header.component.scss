@@ -1,0 +1,82 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #ffcc40;
+  color: white;
+  padding: 0.2rem 2%;
+  position:relative;
+  z-index: 8;
+}
+
+h1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+// Side Nav Css
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5%;
+  z-index: 5;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.logout{
+	position: absolute;
+	bottom: 10%;
+}
+
+@media screen and (max-width: 1120px) {
+  .sidenav{
+    padding-top:8%;
+  }
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: max-height;
+    position: relative;
+    padding-top: 2%;
+    min-height:100vh;
+  }
+  .logout{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    position:static;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}

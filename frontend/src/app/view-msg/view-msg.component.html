@@ -1,0 +1,10 @@
+
+    <div class="card" *ngFor="let message of messages">
+      <div class="card-body">
+        <h5 class="card-title h3">{{ message.destinataire }}</h5>
+        <p class="card-text">{{ message.message }}</p>
+
+        <a href="{{ message.imageUrl }}" class="btn btn-success msgsee" *ngIf="!(message.imageUrl === 'nothing')">Voir l'image</a>
+        <a class="btn btn-danger msgsee" (click)="deleteMsg(message._id)">Supprimé</a>
+      </div>
+    </div>
